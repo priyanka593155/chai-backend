@@ -8,13 +8,13 @@ dotenv.config()
 connectDB()
 .then(()=>{
   app.listen(process.env.PORT || 8000, ()=>{
-    console.log(`server is running at port : ${process.env.PORT}`);
+    // console.log(`server is running at port : ${process.env.PORT}`);
+    console.log("server is up and running")
   })
 })
 .catch((err)=> {
   console.log("momodb connection failed !!!", err);
 })
-
 
 
 
